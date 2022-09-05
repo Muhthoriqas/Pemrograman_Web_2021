@@ -1,0 +1,39 @@
+* {
+  /* text-transform: uppercase; */
+  font-family: "Times New Roman", Times, serif;
+}
+h5 {
+  color: purple;
+  text-align: center;
+}
+
+h6 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+h3 {
+  color: aqua;
+}
+
+h2 {
+  color: goldenrod;
+}
+
+.hurufMiring {
+  font-style: italic;
+}
+
+.hurufBesar {
+  font-size: 30px;
+}
+
+/* Id Lebih Di Prioritaskan */
+#iniLowerCase {
+  text-transform: lowercase;
+}
+
+.iniClassLower {
+  text-transform: capitalize;
+  background-color: blue;
+}
