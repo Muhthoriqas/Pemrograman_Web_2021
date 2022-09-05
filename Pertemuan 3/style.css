@@ -1,5 +1,8 @@
+/* ShourtCut Commentar "CTRL + /" */
 * {
-  /* text-transform: uppercase; */
+  /* membuat seluruh awal kalimat menjadi Huruf Besar */
+  text-transform: capitalize;
+  /* Mengganti semua huruf menjadi Times New Roman */
   font-family: "Times New Roman", Times, serif;
 }
 h5 {
@@ -22,6 +25,7 @@ h2 {
 
 .hurufMiring {
   font-style: italic;
+  background-color: blue;
 }
 
 .hurufBesar {
