@@ -8,9 +8,14 @@
     <!--Contoh Internal CSS -->
     <style>
       h3 {
+        /* warna tidak akan kuning karena kita inisialisasi h3 color di external css
+        urutan prioritas css = Inline-CSS -> External-CSS -> Internal-CSS*/
         color: yellow;
+        /* Membuat Border */
+        border: 1px solid green;
       }
       h4 {
+        /* Mengubah huruf menjadi besar semua */
         text-transform: uppercase;
       }
     </style>
@@ -19,11 +24,11 @@
   </head>
   <body>
     <!-- Style dengan HTML Langsung -->
-    <p>sistem informasi</p>
+    <p>Sistem Informasi</p>
     <font color="blue">ini text biru</font>
 
     <!-- Contoh Inline CSS -->
-    <h1 style="color: red">Avager</h1>
+    <h1 style="color: red">Avanger: end game</h1>
     <h2
       style="
         background-color: green;
@@ -32,22 +37,26 @@
         font-weight: 700px;
       "
     >
-      Spiderman
+      Spiderman: home coming
     </h2>
 
-    <!-- Contoh INternal CSS -->
-    <h3>Avatar</h3>
-    <h4>Naruto</h4>
+    <!-- Contoh Internal CSS lihat baris 9-21 -->
+    <h3>The hunger games</h3>
+    <h4>Money Heist</h4>
 
-    <!-- Contoh External CSS -->
-    <h5>Holmes</h5>
+    <!-- Contoh External CSS lihat file style.css -->
+    <h5>Mencuri Raden Saleh</h5>
     <h6>The walking dead</h6>
+
+    <!-- Contoh Id Selecter -->
+    <p id="iniLowerCase">INI TEXT LOWER CASE</p>
+    <p id="inihurufTebal">ini text tebal</p>
 
     <!-- Contoh Class Selector -->
     <p class="hurufMiring">Ini text miring</p>
-    <p class="hurufBesar">Ini Huruf Besar</p>
+    <p class="hurufBesar">Ini Ukuran Huruf Besar</p>
 
-    <!-- Contoh Id Selecter -->
-    <p id="iniLowerCase">INI LOWER CASE</p>
+    <!-- Contoh 2 Class Dalam 1 Tag/Element HTML -->
+    <p class="miring besar">Contoh 2 Class Text Miring dan Besar</p>
   </body>
 </html>

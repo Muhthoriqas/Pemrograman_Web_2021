@@ -6,12 +6,23 @@
   font-family: "Times New Roman", Times, serif;
 }
 h5 {
+  /* Color di bawah tidak akan muncul karena terdapat perubahn color baru di bawah */
   color: purple;
+  /* Tapi ini tetap muncul karena tidak ada perubahan untuk h5 text-align di bwah */
   text-align: center;
+}
+
+h5 {
+  /* Color yang ini akan muncul untuk text h5 karena d inisialisasi paling terakhir  */
+  /* Kesimpulan apabila ada section yang sama contoh h5 di sini ada 2 dan terdapat property yang sama juga,
+     contoh di sini color, maka yang akan ditampilkan adalah property yang paling bawah.
+      */
+  color: tomato;
 }
 
 h6 {
   font-size: 25px;
+  /* Text-decoration = untuk menambahkan dekorasi pada text contoh garis bawah */
   text-decoration: underline;
 }
 
@@ -20,24 +31,41 @@ h3 {
 }
 
 h2 {
+  /* text color tidak akan berubah menjadi golden karena di h2 terdapat inline css dengan color red */
+  /*urutan prioritas css = Inline-CSS -> External-CSS -> Internal-CSS* */
   color: goldenrod;
 }
 
-.hurufMiring {
-  font-style: italic;
-  background-color: blue;
-}
-
-.hurufBesar {
-  font-size: 30px;
-}
-
-/* Id Lebih Di Prioritaskan */
+/* Id Lebih Di Prioritaskan Di banding Class*/
+/* Urutan Prioritas Inline-CSS -> Id --> Class --> Tag/Element HTML */
 #iniLowerCase {
   text-transform: lowercase;
 }
 
-.iniClassLower {
-  text-transform: capitalize;
+#inihurufTebal {
+  /* font-weight = untuk mengubah ketebalan text */
+  font-weight: bold;
+  /* Atau menggunakn contoh di bwah */
+  /* font-weight: 800; */
+}
+
+.hurufMiring {
+  /* font-style = untuk mengubah bentuk text */
+  font-style: italic;
   background-color: blue;
+}
+.hurufBesar {
+  font-size: 30px;
+}
+
+/* Contoh 2 Class Dalam 1 Tag/Element HTML */
+.miring.besar {
+  background-color: red;
+}
+.besar {
+  /* 1 rem = 16px */
+  font-size: 2rem;
+}
+.miring {
+  font-style: italic;
 }
